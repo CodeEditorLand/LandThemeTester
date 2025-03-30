@@ -1,11 +1,34 @@
 {
 	"name": "theme-tester",
 	"displayName": "Theme Tester",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Test a color theme without installing it",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandThemeTester#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandThemeTester/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandThemeTester.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"browser": "./dist/themeTesterMain.js",
 	"scripts": {
 		"chrome": "yarn compile && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --folder-uri=vscode-theme-tester://m/",
 		"compile": "webpack",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"serve": "yarn compile && serve --cors -l 5000"
 	},
 	"contributes": {
@@ -32,11 +55,15 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/node": "22.x",
 		"assert": "2.1.0",
 		"process": "0.11.10",
 		"request-light": "0.8.0",
 		"serve": "14.2.4",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
