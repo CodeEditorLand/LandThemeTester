@@ -55,7 +55,7 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"@types/node": "22.x",
 		"assert": "2.1.0",
 		"process": "0.11.10",
