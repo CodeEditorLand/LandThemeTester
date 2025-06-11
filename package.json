@@ -51,12 +51,12 @@
 		"serve": "yarn compile && serve --cors -l 5000"
 	},
 	"devDependencies": {
-		"@types/node": "22.x",
+		"@types/node": "24.x",
 		"@types/vscode": "^1.100.0",
 		"@types/webpack": "^5.28.5",
-		"@typescript-eslint/eslint-plugin": "^8.33.1",
+		"@typescript-eslint/eslint-plugin": "^8.34.0",
 		"@typescript-eslint/experimental-utils": "^5.62.0",
-		"@typescript-eslint/parser": "^8.33.1",
+		"@typescript-eslint/parser": "^8.34.0",
 		"@vscode/test-web": "^0.0.70",
 		"assert": "^2.1.0",
 		"eslint": "^9.28.0",
